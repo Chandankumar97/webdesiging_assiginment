@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes animate--div {
+            0%{
+                background-color:rgb(red, green, blue) ;
+                transform: translateX(100px);
+            }
+            50%{
+                background-color:rgb(238,119,145) ;
+                transform: translateY(500px);
+
+            }
+            100%{
+                background-color:rgb(222,231,123) ;
+                transform: translateZ(100px);
+            }
+            75%{top:200px}
+            
+        }
+        div{
+            width: 100px;
+            height:100px;
+            background-color: rgb(222,231,142);
+            border-radius: 50%;
+            animation-name: animate--div;
+            animation-duration: 2s;
+            animation-delay: 0.5;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+
